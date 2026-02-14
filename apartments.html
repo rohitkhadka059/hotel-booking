@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartments</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.apartment-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+.apartment-card:hover {
+  transform: translateY(-5px);
+}
+.apartment-img {
+  flex: 1 1 300px;
+  width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+.apartment-details {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+.price-box {
+  text-align: right;
+}
+@media (max-width:768px){
+  .price-box {
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="bg-primary text-white text-center py-4">
+  <h1>Available Apartments</h1>
+</header>
+
+<section class="container py-5">
+
+  <div class="apartment-card">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPfga8_dwnIqjXOaSJUSnAi-e4Dl1Vlb5MxSNMq=s1360-w1360-h1020-rw"
+         class="apartment-img" alt="Palmo Holiday Apartments">
+
+    <div class="apartment-details">
+      <div class="d-flex justify-content-between flex-wrap">
+        <div>
+          <h4>Palmo Holiday Apartments</h4>
+          <p class="text-muted">📍 Kathmandu</p>
+          <p>⭐⭐⭐⭐ 4.6 Very Good</p>
+          <p>Kitchen • Balcony • Free WiFi</p>
+        </div>
+        <div class="price-box">
+          <h5 class="text-primary">$95</h5>
+          <p>per night</p>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="apartment-card">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweogvBZWjQDm5Kg7qt_dJHlkCxqYdZhyVWgKGNekh2r4IEcUiX_Dm-eseovCBG3pRPSd4S7pHro8qPp9MOWysTpScGKPKCwbRtyCIae_gyAtgkrU6KW8Tgxxnq7jZ_KuB4Ek6ECO=w520-h350-n-k-no"
+         class="apartment-img" alt="Studio Apartment">
+
+    <div class="apartment-details">
+      <div class="d-flex justify-content-between flex-wrap">
+        <div>
+          <h4>Central Park Apartments</h4>
+          <p class="text-muted">📍 Lalitpur</p>
+          <p>⭐⭐⭐⭐ 4.3 Good</p>
+          <p>City View • Kitchenette • Parking</p>
+        </div>
+        <div class="price-box">
+          <h5 class="text-primary">$75</h5>
+          <p>per night</p>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.villa-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+.villa-card:hover {
+  transform: translateY(-5px);
+}
+.villa-img {
+  flex: 1 1 300px;
+  width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+.villa-details {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+.price-box {
+  text-align: right;
+}
+@media (max-width:768px){
+  .price-box {
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="bg-primary text-white text-center py-4">
+  <h1>Luxury Villas</h1>
+</header>
+
+<section class="container py-5">
+
+  <div class="villa-card">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMMUi0f-Dd_c862KQ0AGkDTX5s5C4f8n0es1zJz=s1360-w1360-h1020-rw"
+         class="villa-img" alt="The White House Villa">
+
+    <div class="villa-details">
+      <div class="d-flex justify-content-between flex-wrap">
+        <div>
+          <h4>The White House Villa</h4>
+          <p class="text-muted">📍 Kathmandu, Nepal</p>
+          <p>⭐⭐⭐⭐⭐ 5.0 Premium</p>
+          <p>Private Pool •  Free Parking</p>
+        </div>
+        <div class="price-box">
+          <h5 class="text-primary">$250</h5>
+          <p>per night</p>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="villa-card">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPn3wa2qjTG7SC5DV9GJoD0f3AZnZHfJ8d8M7N6=w324-h312-n-k-no"
+         class="villa-img" alt="Mountain Villa">
+
+    <div class="villa-details">
+      <div class="d-flex justify-content-between flex-wrap">
+        <div>
+          <h4>Himalayan Retreat Villa</h4>
+          <p class="text-muted">📍 Nagarkot</p>
+          <p>⭐⭐⭐⭐⭐ 4.9 Excellent</p>
+          <p>Mountain View • Fireplace • Garden</p>
+        </div>
+        <div class="price-box">
+          <h5 class="text-primary">$220</h5>
+          <p>per night</p>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

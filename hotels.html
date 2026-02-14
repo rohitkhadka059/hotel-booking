@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotels</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.hotel-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.hotel-img {
+  flex: 1 1 300px;
+  min-height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hotel-details {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.price-box {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .price-box {
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="bg-primary text-white text-center py-4">
+  <h1>Available Hotels</h1>
+</header>
+
+<section class="container py-5">
+
+  <!-- Hotel 1 -->
+  <div class="hotel-card">
+    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/705734435.jpg?k=e7f7aa8084cfb8135d3c54525ec177ee7f30c0ac93ec3c69f2b9a412060afc29&o="
+         alt="The Soaltee Kathmandu" class="hotel-img">
+
+    <div class="hotel-details">
+      <div class="d-flex justify-content-between flex-wrap">
+        <div>
+          <h4>The Soaltee Kathmandu</h4>
+          <p class="text-muted">📍 Kathmandu, Nepal</p>
+          <p>⭐⭐⭐⭐⭐ 5.0 Excellent</p>
+          <p>Free WiFi • Breakfast included • Pool</p>
+        </div>
+
+        <div class="price-box">
+          <h5 class="text-primary">$120</h5>
+          <p>per night</p>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hotel 2 -->
+  <div class="hotel-card">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipNjRTEOU3x6EQF4lN4VANGUDcGW3ABc6lKACwM=w253-h337-k-no"
+         alt="Mercure Hotel" class="hotel-img">
+
+    <div class="hotel-details">
+      <div class="d-flex justify-content-between flex-wrap">
+        <div>
+          <h4>Mercure Hotel</h4>
+          <p class="text-muted">📍 Kathmandu, Nepal</p>
+          <p class="text-muted">⭐⭐⭐⭐ 4.5 Good</p>
+          <p>Free WiFi • Breakfast included • Gym</p>
+          <div class="price-box">
+          <h5 class="text-primary">$120</h5>
+          <p>per night</p>
+          <button class="btn btn-warning">Book Now</button>
+        </div>
+
+        </div>
